@@ -1,0 +1,17 @@
+<h1> Edit your information:</h1>
+
+<%= form_for @user, url: {action: "update"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br/>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br/>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <br/>
+  <%= f.label :state %>
+  <%= f.text_field :state %>
+  <br/>
+  <%= f.submit "Click here to update" %>
+<% end %>
